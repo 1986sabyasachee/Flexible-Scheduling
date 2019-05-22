@@ -1,0 +1,14 @@
+
+******Please consult the latest version "Version_3.0_efficient_with Normalized.rar" *********
+
+1) Individual folders contain the data for particular benchmark under different TAM Widths and different layers.
+
+2) All necessary input files are given in the folder named as per benchmark name, like "d695" or "d695_Windows".
+
+3) First, the user have to create an executable (here "scheduling.o") using the file "Schduling_efficient.c" to generate the scheduling output.
+
+ The output gets stored in the file named as "out_<TAM-Width>_new.txt" and "out_<TAM-Width>_read.txt" for later use.
+
+4) Then simply use the  "run2.c" or "run3.c" or "run4.c" to execute the assignments of cores in 2, 3 and 4 nmber of tiers respectively. Before that one must ensure that they have generated the executable (here "placement.o" or "placement.exe") from placement.c
+
+5) In the folder named "<benchmark name>_Windows", the file  "excel_<area constraint>.txt" will be generated as a summary of result. Here each row represents the following columns respectively - "alpha" "layer", "TAM-Width", "Test-time" and  "Number of TSV".
